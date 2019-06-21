@@ -1,0 +1,16 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-plugin-prettier",
+    "tslint-config-prettier",
+    "tslint-config-kodefox"
+  ],
+  "linterOptions": {
+    "exclude": ["node_modules/**/*", "**/*.js"]
+  },
+  "rules": {
+    "jsx-no-lambda": false
+  }
+}
