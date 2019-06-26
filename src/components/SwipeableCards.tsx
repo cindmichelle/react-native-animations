@@ -10,7 +10,7 @@ type State = {
   isCardExist: boolean;
 };
 
-export function SwipeableCardsHooks(props: Props) {
+export function SwipeableCardsHooks() {
   let [cards, setCards] = useState([
     {
       id: '1',
