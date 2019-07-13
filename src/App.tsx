@@ -3,6 +3,7 @@ import {StyleSheet, View, TouchableOpacity, Text} from 'react-native';
 import SwipeableCards from './components/SwipeableCards';
 import FavoriteButton from './components/FavoriteButton';
 import ModalBottomSheet from './components/ModalBottomSheet';
+import DraggableCard from './core-ui/DraggableCard';
 
 export default function App() {
   let [modalVisible, setModalVisible] = useState(false);
@@ -13,8 +14,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <SwipeableCards />
-      <TouchableOpacity style={styles.button} onPress={_handleModal}>
+      {/* <SwipeableCards /> */}
+      {/* <TouchableOpacity style={styles.button} onPress={_handleModal}>
         <Text
           style={{
             color: 'white',
@@ -25,9 +26,9 @@ export default function App() {
         >
           Click to show Modal
         </Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <FavoriteButton />
-      <ModalBottomSheet
+      {/* <ModalBottomSheet
         title="Modal Title"
         visible={modalVisible}
         onVisibleChange={_handleModal}
@@ -38,7 +39,8 @@ export default function App() {
         <Text>Hello</Text>
         <Text>Hello</Text>
         <Text>Hello</Text>
-      </ModalBottomSheet>
+      </ModalBottomSheet> */}
+      <DraggableCard />
     </View>
   );
 }
